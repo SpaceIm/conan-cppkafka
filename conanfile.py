@@ -48,12 +48,10 @@ class CppKafkaConan(ConanFile):
     def configure(self):
         if self.options.shared:
             del self.options.fPIC
-        self.options["librdkafka"].shared = self.options.shared
 
     def requirements(self):
         self.requires("boost/1.78.0")
         self.requires("librdkafka/1.8.2")
-
 
     @property
     def _minimum_compilers_version(self):
