@@ -5,5 +5,3 @@ include(conanbuildinfo.cmake)
 conan_basic_setup(TARGETS KEEP_RPATHS)
 
 add_subdirectory(source_subfolder)
-
-target_compile_features(cppkafka PRIVATE cxx_std_11)
